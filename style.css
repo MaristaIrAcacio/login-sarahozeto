@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(73, 1, 1);
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+p{
+    font-family: cursive;
+}
+h1, label, button {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form{
+    padding: 400px;
+    border-radius: 2px;
+    width: 300px;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(73, 1, 1);
+    font-size: large;
+    font-family: cursive;
+    border: 2ch;
+}
+button:hover{
+    background-color: rgb(73, 1 ,1);
+    color: rgb(255, 255, 255)
+}
