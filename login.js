@@ -15,10 +15,19 @@ function Verifica(){
 //---cria o array para guardar os usuários
 var dadosLista = [];
 function salvarUsuario(){
-    let nomeUsuario = document.getElementById("nomeUsuario").value;
+    let nomeUsuario = document.getElementById("nomeUser").value;
 
     if(nomeUsuario){
         dadosLista.push(nomeUsuario);
-        console.log(dadosLista);
+        criaLista();
+        //console.log(dadosLista);
+    }
+}
+function criaLista(){
+    let tabela = document.getElementById("tabela").innerHTML = "<tr><th>Nome usuário:</th><th>Ações:</ th></tr>";
+
+    for(let i=0; i<= (dadosLista.length -1); i++){
+        tabela += "<tr><td>" + dadosLista[i]  + "</td><td> <button onclick=''>Editar</button><button onclick=''>Excluir</button></td></tr>";
+        document.getElementById('tabela').innerHTML = tabela; 
     }
 } 
