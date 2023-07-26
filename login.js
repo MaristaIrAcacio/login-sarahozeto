@@ -20,8 +20,10 @@ function salvarUsuario(){
     if(nomeUsuario){
         dadosLista.push(nomeUsuario);
         criaLista();
-        document.getElementById(nomeUser).value = ''
-        //console.log(dadosLista);
+        document.getElementById("nomeUser").value = ''
+    }else{
+        alert("Digite um nome!");
+        document.getElementById('nomeUser').focus();
     }
 }
 function criaLista(){
